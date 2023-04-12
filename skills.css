@@ -1,0 +1,74 @@
+.u_center{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: black;
+
+
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.skills{
+    margin:1em ;
+    position: relative;
+    width: 22.5em;
+}
+
+.skill__type{
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+    width: 5em;
+}
+
+.skill__outer-bar, .skill__inner-bar{
+    height: 1em;
+}
+
+.skill__outer-bar{
+    background: #191919;
+    margin: .5em;
+}
+
+.skill__inner-bar{
+    animation: fillbar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.skill-inner--01 {
+    width: 100%;
+    background: #FF7600;
+}
+.skill-inner--02 {
+    width: 90%;
+    background: #00B6FF;
+}
+.skill-inner--03 {
+    width: 60%;
+    background: #FEFF00;
+}
+.skill-inner--04 {
+    width: 75%;
+    background: #3842ff;
+}
+.skill-inner--05 {
+    width: 70%;
+    background: linear-gradient(90deg, rgba(0,116,255,1) 50%, rgba(255,214,0,1) 50%);
+}
+.skill-inner--06 {
+    width: 80%;
+    background: #000BFF;
+}
+
+@keyframes fillbar {
+    to {
+        transform: scaleX(1);
+    }
+}
